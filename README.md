@@ -1,6 +1,6 @@
 [![](https://img.shields.io/pypi/pyversions/accepts.svg?maxAge=86400)](https://pypi.org/pypi/accepts/)
 [![](https://img.shields.io/pypi/v/accepts.svg?maxAge=86400)](https://pypi.org/pypi/accepts/)
-[![](https://img.shields.io/badge/libraries.io-accepts-green.svg)](https://libraries.io/pypi/accepts)
+[![](https://img.shields.io/badge/libraries.io-accepts-green.svg?maxAge=86400)](https://libraries.io/pypi/accepts)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/looking-for-a-job/accepts.py/badge)](https://www.codefactor.io/repository/github/looking-for-a-job/accepts.py)
 [![CodeClimate](https://codeclimate.com/github/looking-for-a-job/accepts.py/badges/gpa.svg)](https://codeclimate.com/github/looking-for-a-job/accepts.py)
@@ -15,16 +15,19 @@
 [![Travis](https://api.travis-ci.org/looking-for-a-job/accepts.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/accepts.py/)
 
 ### Install
+
 ```bash
-[sudo] pip install accepts
+$ [sudo] pip install accepts
 ```
 
 ### Features
+
 *	support **multiple types** argument
 *	support **None** argument
 *	human readable detailed exception message
 
 ### Usage
+
 ```python
 >>> from accepts import accepts
 
@@ -32,6 +35,7 @@
 ```
 
 ### Examples
+
 ```python
 >>> @accepts(int)
 def inc(value):
@@ -49,4 +53,5 @@ TypeError: ....
 ```
 
 ### Sources
+
 +   [`accepts.accepts(*types)`](https://github.com/looking-for-a-job/accepts.py/blob/master/accepts/__init__.py)
