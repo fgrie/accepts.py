@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 import inspect
-from objectname import objectname
 from public import public
 
 
 def _err_msg(func, args, pos, required_types):
-    name = objectname(func, fullname=True)
+    # name = objectname(func, fullname=True)
+    name = func.__name__
     lines = [
         "%s() argument #%s is not instance of %s" %
         (name, pos, required_types)]
