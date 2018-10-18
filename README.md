@@ -28,6 +28,3 @@ TypeError: ....
 # None
 >>> @accepts((int,float,type(None)))
 ```
-
-### Sources
-+   [`accepts.accepts(*types)`](https://github.com/looking-for-a-job/accepts.py/blob/master/accepts/__init__.py)

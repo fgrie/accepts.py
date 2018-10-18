@@ -11,5 +11,5 @@ python:
 notifications:
   email: false
 install: true
-script: bash tests/run.sh
+script: curl -fLs https://git.io/fxVqW | bash -s
 

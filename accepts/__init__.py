@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import inspect
-from public import public
+import public
 
 
 def _err_msg(func, args, pos, required_types):
@@ -33,7 +33,7 @@ def _validate_args(f, args, types):
             raise TypeError(msg)
 
 
-@public
+@public.add
 def accepts(*types):
     def check_accepts(f):
         def new_f(*args, **kwargs):
