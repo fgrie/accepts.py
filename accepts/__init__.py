@@ -2,9 +2,12 @@
 import inspect
 import public
 
+"""
+f.func_code.co_argcount  python 2.x only
+"""
+
 
 def _err_msg(func, args, pos, required_types):
-    # name = objectname(func, fullname=True)
     name = func.__name__
     lines = [
         "%s() argument #%s is not instance of %s" %
@@ -12,8 +15,6 @@ def _err_msg(func, args, pos, required_types):
     lines += ["args: %s" % str(list(args))]
     lines += ["arg#%s: %s" % (pos, args[pos])]
     return "\n".join(lines)
-
-# f.func_code.co_argcount  python 2.x only
 
 
 def _func_args(f):
@@ -35,6 +36,7 @@ def _validate_args(f, args, types):
 
 @public.add
 def accepts(*types):
+    """@accepts decorator"""
     def check_accepts(f):
         def new_f(*args, **kwargs):
             _validate_args(f, args, types)
