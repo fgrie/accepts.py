@@ -13,7 +13,7 @@ $ [sudo] pip install accepts
 *	human readable detailed exception message
 
 #### Functions
-function|description
+function|`__doc__`
 -|-
 `accepts.accepts(*types)`|@accepts decorator
 
